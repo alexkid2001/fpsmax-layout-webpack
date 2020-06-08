@@ -1,0 +1,137 @@
+.rival {
+  background-color: white;
+  padding: 68px 82px 90px;
+  text-align: right;
+
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    height: 168px;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 57px;
+    padding-right: 16px;
+  }
+
+  &__params {
+    text-align: right;
+    padding-top: 50px;
+  }
+
+  &__sum {
+    color: $secondaryFontColor;
+    font-family: $mainFontMedium;
+    font-size: 60px;
+    font-weight: 500;
+  }
+
+  &__factor {
+    font-size: 30px;
+    margin-top: 30px;
+    color: $additionalColor;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    //& > *:nth-child(n+2) {
+    //  padding-left: 50px;
+    //}
+
+    .dot {
+      border-radius: 50%;
+      background-color: rgb(216, 220, 230);
+      width: 8px;
+      height: 8px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  .button {
+    margin-top: 67px;
+    color: #30ac29;
+  }
+
+  &_right {
+    text-align: left;
+
+    .rival {
+
+      &__top {
+        //justify-content: flex-start;
+        flex-direction: row-reverse;
+      }
+
+      &__logo {
+        margin-left: 0;
+        margin-right: 57px;
+        padding-right: 0;
+        padding-left: 16px;
+        justify-content: flex-start;
+      }
+
+      &__params {
+        text-align: left;
+      }
+
+      &__factor {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .button {
+      color: #ea3333;
+    }
+  }
+
+  @media screen and (max-width: 1780px) {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &__top {
+      flex-direction: column-reverse;
+      align-items: center;
+      height: auto;
+    }
+
+    &__logo {
+      margin: 0;
+      width: 174px;
+      height: 174px;
+    }
+
+    &__factor {
+      justify-content: center;
+    }
+
+    &_right {
+      text-align: center;
+
+      .rival {
+
+        &__top {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+
+        &__logo {
+          margin: 0;
+        }
+      }
+
+
+    }
+
+    .button_to-win {
+      width: 400px;
+      min-width: auto;
+    }
+  }
+}
+

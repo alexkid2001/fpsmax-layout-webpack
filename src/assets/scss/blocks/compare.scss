@@ -1,0 +1,82 @@
+.compare {
+  margin-top: 32px;
+
+  &__title {
+    font-size: 26px;
+    font-family: $mainFontMedium;
+    font-weight: 500;
+    color: #8d9bad;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  &__top {
+    background-color: #f9fbfd;
+  }
+
+  &__compare-teams {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 28px;
+
+    .team {
+      margin-top: 40px;
+      flex-basis: 100%;
+      flex: 1;
+    }
+  }
+
+  &-trapecia {
+    //box-shadow: 0px 23px 49px 0px rgba(48, 52, 65, 0.03);
+    height: 142px;
+    width: 342px;
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 28px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 142px;
+      width: 280px;
+      box-shadow: 0px 23px 49px 0px rgba(48, 52, 65, 0.03);
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    img {
+      position: absolute;
+      width: 342px;
+      height: 142px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+
+    &__line {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      padding: 24px 0 14px;
+
+      span {
+        color: #98a4b7;
+        font-size: 24px;
+        font-family: $mainFontMedium;
+        font-weight: 500;
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+    }
+
+    &__percent {
+      font-size: 28px;
+      font-family: $mainFontMedium;
+      font-weight: 500;
+    }
+  }
+}

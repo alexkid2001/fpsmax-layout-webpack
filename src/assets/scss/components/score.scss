@@ -1,0 +1,29 @@
+.score {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 23px 49px 0px rgba(48, 52, 65, 0.03);
+  width: 306px;
+  height: 200px;
+  text-align: center;
+  padding-top: 28px;
+
+  &__title {
+    font-size: 24px;
+    font-family: $mainFontMedium;
+    color: #96a2b3;
+  }
+
+  &__score {
+    font-size: 63px;
+    font-family: $mainFontBold;
+    color: #455467;
+    margin-top: 32px;
+  }
+
+  &__date {
+    font-size: 22px;
+    font-family: $mainFontMedium;
+    color: #96a2b3;
+    margin-top: 26px;
+  }
+}

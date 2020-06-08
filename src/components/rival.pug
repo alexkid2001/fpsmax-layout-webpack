@@ -1,0 +1,21 @@
+mixin rival(logoURL, sum, percent, factor, btnTitle, isCup)
+  .rival(class!=attributes.class)
+    .rival__top
+      .rival__params
+        .rival__sum= sum
+        .rival__factor
+          span= percent
+          .dot
+          span= factor
+      .rival__logo
+        img(src=logoURL)
+    .button.button_to-win
+      .button__title= btnTitle
+      .button__subtitle на победу в матче
+      if isCup
+        .cup
+
+
+
+
+

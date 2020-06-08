@@ -1,0 +1,78 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  line-height: $mainLineHeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $mainFontColor;
+  min-width: 1024px;
+  background-color: $backgroundColor;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 2530px;
+  width: 100%;
+  position: relative;
+  //margin: 0 auto;
+  margin: 0 auto;
+}
+
+@import "components/button";
+@import "components/rival";
+@import "components/score";
+@import "components/cup";
+@import "components/team";
+@import "components/match";
+@import "components/tabs";
+
+@import "blocks/header";
+@import "blocks/main-block";
+@import "blocks/compare";
+@import "blocks/last-matches";
+@import "blocks/matches-list";
+@import "blocks/matches-results";
+@import "blocks/additional-events";
+@import "blocks/table-block";
+
+@media screen and (max-width: 1780px) {
+
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+  }
+}

@@ -1,0 +1,51 @@
+.additional-events {
+
+  &__title {
+    font-family: $mainFontBold;
+    font-weight: 800;
+    font-size: 28px;
+    background-color: white;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__nav {
+    border-top: 2px solid #eef2f5;
+    border-bottom: 2px solid #eef2f5;
+    height: 130px;
+    background-color: white;
+
+    .tabs {
+      height: 100%;
+    }
+  }
+
+  &__tables {
+    padding: 75px;
+    display: flex;
+    justify-content: space-between;
+
+    & > * {
+      flex-basis: calc(100% / 2 - 32px);
+    }
+  }
+
+
+  @media screen and (max-width: 1600px) {
+
+    &__tables {
+      flex-wrap: wrap;
+      padding: 75px 10px;
+
+      & > * {
+        flex-basis:100%;
+
+        &:nth-child(n+2) {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

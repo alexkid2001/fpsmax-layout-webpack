@@ -1,0 +1,70 @@
+.main-block {
+  margin-top: 64px;
+
+  &__wrap {
+  }
+
+  &__title {
+    text-align: center;
+    color: #333a44;
+    font-family: $mainFontMedium;
+    font-size: 34px;
+    font-weight: 400;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 4px;
+
+
+    span {
+      margin-left: -7px;
+    }
+  }
+
+  &__rivals {
+    background-color: #f8fafb;
+    display: flex;
+    width: 100%;
+    background-image: url(/assets/img/main-block.bg);
+    background-repeat: no-repeat;
+    background-position: center 100%;
+
+    .rival {
+      flex-basis: calc(100% / 2 - 154px - 15px);
+    }
+  }
+
+    &__score {
+      margin-top: 47px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+  @media screen and (max-width: 1400px) {
+
+    &__rivals {
+      flex-wrap: wrap;
+    }
+
+    &__score {
+      order: 0;
+      flex-basis: 100% ;
+      text-align: center;
+
+      .score {
+        margin: 30px auto;
+      }
+    }
+
+    .rival {
+      &:first-child {
+        order: 1;
+      }
+      &:last-child {
+        order: 2;
+        margin-left: auto;
+      }
+    }
+  }
+}

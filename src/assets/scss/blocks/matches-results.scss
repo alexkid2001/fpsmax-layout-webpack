@@ -1,0 +1,51 @@
+.matches-results {
+  border-left: 2px solid #e7ecf1;
+  border-right: 2px solid #e7ecf1;
+  padding-left: 85px;
+  padding-right: 85px;
+  width: 454px;
+
+  &__item {
+    font-family: $mainFont;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 18px;
+
+    &:nth-child(n+2) {
+      margin-top: 34px;
+    }
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 6px;
+      background-color: $red;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+      background-color: $green;
+    }
+
+    &_win {
+
+      &:before {
+        background-color: $green;
+      }
+
+      &:after {
+        background-color: $red;
+      }
+    }
+  }
+}

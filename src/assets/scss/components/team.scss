@@ -1,0 +1,36 @@
+.team {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  &__title {
+    color: #212326;
+    font-size: 28px;
+    font-family: $mainFontMedium;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+
+  &__logo  {
+    margin-left: 20px;
+    width: 80px;
+    text-align: right;
+
+    img {
+      display: inline-block;
+    }
+  }
+
+  &_right {
+    flex-direction: row-reverse;
+
+    .team {
+
+      &__logo {
+        margin-left: 0;
+        margin-right: 20px;
+        text-align: left;
+      }
+    }
+  }
+}

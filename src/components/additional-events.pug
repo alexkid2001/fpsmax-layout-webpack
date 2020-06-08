@@ -1,0 +1,70 @@
+include tabs
+
+.additionsl-events
+  .container
+    .additional-events__title Дополнительные события на матч
+    .additional-events__nav
+      +tabs([
+        {title: 'Все', active: true},
+        {title: 'Матч'},
+        {title: 'Карта 1'},
+        {title: 'Карта 2'},
+        {title: 'Тотал'}
+      ])
+    .additional-events__tables
+      .table-block
+        .table-block__title Победитель
+        .table
+          .table__title Победитель (матч)
+          table
+            thead
+              tr
+                td Unique Flames
+                td Windigo Gaming
+            tbody
+              tr
+                td.table__winner-cell 2.00
+                td 1.85
+        .table
+          .table__title Победитель (игра)
+          table
+            thead
+              tr
+                td Unique Flames
+                td Windigo Gaming
+            tbody
+              tr
+                td 2.00
+                td 1.85
+      .table-block
+        .table-block__title Раунды
+        .table
+          .table__title Кол-во раундов больше/меньше 26.5
+          table
+            thead
+              tr
+                td Line
+                td Больше
+                td Меньше
+            tbody
+              tr
+                td 26.5
+                td 2.26
+                td.table__accent-cell 1.79
+        .table
+          .table__title Гандикап по раундам -2.5
+          table
+            thead
+              tr
+                td Line
+                td Больше
+                td Меньше
+            tbody
+              tr
+                td -2.5
+                td 1.85
+                td 2.17
+        .table-block__more-events Показать все события
+          span +4
+
+

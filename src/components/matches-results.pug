@@ -1,0 +1,4 @@
+mixin matchesResults(objArray)
+  .matches-results
+    each item in objArray
+      .matches-results__item(class= item.win ? 'matches-results__item_win' :'')= item.date

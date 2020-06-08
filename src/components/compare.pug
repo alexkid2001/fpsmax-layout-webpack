@@ -1,0 +1,20 @@
+include team
+
+.compare
+  .container.compare__wrap
+    .compare__top
+      .compare__title Сравнить команды
+      .compare__compare-teams
+        +team('Unique Flames', '/assets/img/unique.png', 72, 60)
+        .compare__trapecia.compare-trapecia
+          img(src="/assets/img/trapecia.png")
+          .compare-trapecia__line
+            .compare-trapecia__percent 52%
+            span ВОЗ
+            .compare-trapecia__percent 48%
+          .compare-trapecia__line
+            .compare-trapecia__percent 40%
+              span ВОЗ
+            .compare-trapecia__percent 60%
+          .compare-trapecia__line
+        +team('Movistar Riders', '/assets/img/movistar.png', 96, 72).team_right

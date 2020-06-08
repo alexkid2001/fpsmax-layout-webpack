@@ -1,0 +1,55 @@
+.last-matches {
+
+  &__title-line {
+    background-color: white;
+    width: 100%;
+    height: 120px;
+    font-size: 30px;
+    font-family: $mainFontMedium;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7px;
+
+    span:nth-child(2){
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+  }
+
+  &__matches {
+    margin-top: 4px;
+    background-color: $grey-bg;
+    padding: 57px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .matches-list {
+      padding-left: 40px;
+      padding-right: 40px;
+      //flex-basis: 100%;
+      //flex: 1;
+    }
+
+    .match {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+
+    &__title-line {
+
+      span {
+        text-align: center;
+
+        &:nth-child(2) {
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}

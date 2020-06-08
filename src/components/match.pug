@@ -1,0 +1,10 @@
+mixin match(title, date, num1, num2 ,logoUrl, width, height)
+  .match(class!=attributes.class)
+    .match__logo
+      .match__logo-wrap
+        img(src=logoUrl width=width height=height class="match__icon")
+    .match__title= title
+    .match__date= date
+    .match__score
+      span= num1
+      span= num2

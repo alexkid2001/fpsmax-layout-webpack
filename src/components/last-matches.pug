@@ -1,0 +1,44 @@
+include match
+include matches-results
+
+.last-matches
+  .container
+    .last-matches__title-line
+      span Последние матчи Unique Flames
+      span Личные встречи
+      span Последние матчи Moviestar Riders
+    .last-matches__matches
+      .matches-list
+        +match('vs Chiefs', '26.03.2019', 2, 0, '/assets/img/chiefs.png', 60, 72)
+        +match('vs NoChance', '25.03.2019', 0, 1, '/assets/img/nochance.png', 58, 72).match_loss
+        +match('vs FATE', '21.03.2019', 5, 3, '/assets/img/fate.png', 65, 66)
+        +match('vs Tricked', '30.03.2019', 0, 3, '/assets/img/tricked.png', 60, 72).match_loss
+        +match('vs pro100', '01.07.2019', 2, 7, '/assets/img/pro100.png', 60, 72).match_loss
+      +matchesResults([
+        {
+          date: '21.03.2019',
+          win: true
+        },
+        {
+          date: '16.02.2019',
+        },
+        {
+          date: '14.02.2019',
+          win: true
+        },
+        {
+          date: '10.02.2019',
+          win: true
+        },
+        {
+          date: '26.02.2019',
+        }
+      ])
+      .matches-list
+        +match('vs Tricked', '26.03.2019', 3, 6, '/assets/img/naii.png', 66, 58).match_loss
+        +match('vs Sprout', '25.03.2019', 4, 8, '/assets/img/sprout.png', 59, 62).match_loss
+        +match('vs HoP', '05.04.2019', 9, 2, '/assets/img/hop.png', 62, 62)
+        +match('vs Fnatic', '30.03.2019', 7, 5, '/assets/img/fnatic.png', 62, 60)
+        +match('vs Chaos', '01.07.2019', 4, 7, '/assets/img/chaos.png', 61, 34).match_loss
+
+

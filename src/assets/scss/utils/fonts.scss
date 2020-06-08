@@ -1,0 +1,5 @@
+@import "mixins";
+
+@include font-face("MullerRegular", "/assets/fonts/MullerRegular", 400, "normal");
+@include font-face("MullerMedium", "/assets/fonts/MullerMedium", 500, "normal");
+@include font-face("MullerBold", "/assets/fonts/MullerBold", 800, normal);

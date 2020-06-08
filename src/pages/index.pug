@@ -1,0 +1,16 @@
+block variables
+
+doctype html
+html
+  head
+    block base
+      base(href='./')
+    title #{title}
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width initial-scale=1.0")
+
+    block styles
+      link(rel="stylesheet" type="text/css" href='/css/b2b_redesign/style.css')
+  body
+    h1 Test
+    block content

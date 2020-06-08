@@ -1,0 +1,5 @@
+mixin team(title, logoUrl, width, height)
+  .team(class!=attributes.class)
+    .team__title= title
+    img(src=logoUrl width=width height=height).team__logo
+

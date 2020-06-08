@@ -1,0 +1,16 @@
+include ../components/rival
+include score
+
+.main-block
+  .container.main-block__wrap
+    .main-block__title
+      span NEX Invitational 2019 Thailand Finals
+    .main-block__rivals
+      +rival('/assets/img/lucide.png', '714 292 Р', '88% ', 'x1.12', 'Lucide Dream', true)
+      .main-block__score
+        +score('BO3', '3 : 0', '30 Aug 14:00 GMT-3')
+      +rival('/assets/img/windigo.png', '53 360 Р', '12% ', 'x5.12', 'Windigo Gaming').rival_right
+
+
+
+
